@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/58f25a0243.js" crossorigin="anonymous"></script>
+    <title>Exchange Rate</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Cryptocurrency Exchange Rate App</h1>
+        <p>Sprawdź aktualne kursy kryptowalut</p>
+
+        <div class="app-body">
+
+            <div class="section-left">
+                <input type="number" class="amount-one" value="1">
+                <select id="currency-one">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="BNB">BNB</option>
+                    <option value="LTC">LTC</option>
+                    <option value="XRP">XRP</option>
+                </select>
+            </div>
+
+            <button class="swap">
+                <i class="fas fa-retweet"></i>
+            </button>
+
+            <div class="section-right">
+                <input type="number" class="amount-two" disabled>
+                <select id="currency-two">
+                    <option value="PLN">PLN</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="BNB">BNB</option>
+                    <option value="LTC">LTC</option>
+                    <option value="XRP">XRP</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="rate-info"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
